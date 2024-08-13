@@ -16,12 +16,34 @@
 }
 
   .header-bg{
-    background-image: linear-gradient(to top, #111111, #777777);
+    background-image: linear-gradient(to bottom, #111111, #777777);
   }
 
   /* shared styles */
   .display-flex {
     display: flex;
+  }
+
+  .btn-primary {
+    background-color: #E6533C;
+    color: white;
+    padding: 16px 46.5px;
+    font-size: 1.125rem;
+    font-weight: 600;
+    border-radius: 42px;
+    border: none;
+  }
+
+  .secondary-btn {
+    /* background-image: linear-gradient(to right,#111111, #777777); */
+    background-color: black;
+    color: white;
+    padding: 16px 46.5px;
+    font-size: 1.125rem;
+    font-weight: 600;
+    border-radius: 42px;
+    border: none;
+    margin-left: 15px;
   }
 
   /* light-02 */
@@ -33,6 +55,7 @@
    .text-light-gray {
     color: rgba(255, 255, 255, 0.5);
   }
+
 
   /* header styles */
   .brand {
@@ -71,8 +94,7 @@
   }
 
   /* banner styles */
-  .banner {
-    
+  .banner { 
   }
 
   .banner-title {
@@ -89,3 +111,16 @@
     font-size: 1rem;
   }
 
+  .banner-img {
+    margin-left: 88px;
+    margin-right: 214px;
+  }
+
+  .free-workout {
+    padding: 17px 53px 17px 24px;
+  }
+
+  .workout-number {
+    font-size: 2.4rem;
+    font-weight: 800;
+  }
