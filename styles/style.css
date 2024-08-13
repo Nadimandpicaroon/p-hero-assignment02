@@ -3,7 +3,20 @@
 .inter-font {
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 400;
+    font-weight: 800;
     font-style: Bold italic;
   }
+  /* shared styles */
+  .display-flex {
+    display: flex;
+  }
+  /* header styles */
+
+  /* navbar styles */
+  .navbar {
+   
+  }
   
+  .nav-links {
+    
+  }
