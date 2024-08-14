@@ -13,11 +13,12 @@
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
-  font-size: 4.8rem;
+  font-size: 9rem;
 }
 
   .header-bg{
-    background-image: linear-gradient(to bottom, #111111, #777777);
+    /* background-image: linear-gradient(to bottom, #111111, #777777); */
+    background-image: linear-gradient(#111111, #777777, #111111);
   }
 
   /* shared styles */
@@ -68,6 +69,7 @@
     font-size: 2.25rem;
     font-weight: 800;
     color: rgba(230, 83, 60, 1);
+    font-style: italic;
   }
 
   /* home navbar styles */
@@ -107,6 +109,7 @@
     font-size: 4.8rem;
     font-weight: 900;
     text-align: left;
+    line-height: 130%;
   }
 
   .banner-description {
@@ -120,6 +123,10 @@
     margin-right: 214px;
   }
 
+  .test {
+    position: relative;
+  }
+
   #workout-badge {
     background-color: rgba(255, 255, 255, 0.1);
     border-radius: 12px;
@@ -128,9 +135,20 @@
     font-size: 0.8rem;
     font-weight: 300;
     text-align: left;
-    margin-left: 340px;
+    position: absolute;
+    left: 50px;
+    top: 400px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
   }
 
+  .red-circle {
+    border: 2px solid red;
+    padding: 20px;
+    background-color: #E6533C;
+    border-radius: 9999px;
+  }
   #another-badge {
     background-color: rgba(255, 255, 255, 0.1);
     border-radius: 12px;
@@ -139,6 +157,9 @@
     font-size: 0.8rem;
     font-weight: 300;
     text-align: left;
+    position: absolute;
+    right: 150px;
+    top: 150px;
   }
 
   #workout-num {
@@ -158,17 +179,16 @@
 /* Change your habit section styles */
 
 .change-habit {
-  max-width: 1044px;
+  width: 100vh;
   height: 452px;
   margin: 0 auto;
   text-align: center;
 }
 
 .change-banner {
-  width: 671px;
+  width: 100vh;
   height: 120px;
   text-align: center;
-  margin-left: 40px;
   margin-bottom: 58px;
 }
 
@@ -185,7 +205,7 @@
 }
 
 .change-img-section{
-  width: 1044px;
+  width: 100vh;
   height: 274px;
   margin: 0 auto;
   justify-content: space-between;
@@ -221,13 +241,20 @@
 
 /* Run extra section  styles */
 
-.run-extra {
+/* .run-extra {
   max-width: 1060px;
   height: 371px;
   margin: 0 auto;
   border-radius: 18px;
   background-color: rgba(34, 34, 34, 1);
   align-items: center;
+  gap: 165px;
+  
+  
+}
+
+.run-extra-content {
+  margin-left: 54px;
 }
 
 .run-extra-title {
@@ -239,5 +266,70 @@
 .run-extra-description {
    font-size: 0.875rem;
   font-weight: 300;
-  color: rgba(255, 255, 255, 0.5)
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.run-img-div {
+  width: 500px;
+  height: 500px ;
+  border: 1px solid red;
+ 
+}
+
+.test-div {
+  height: 250px;
+  width: 250px;
+  border: 1px solid red;
+}
+
+.run-extra-img {
+  width: 500px;
+  height: 500px; */
+  /* border-radius: 12px;
+  
+  object-position: center;
+
+} */
+
+/* BMI CALCULATOR STYLES */
+.bmi-calc-part{
+  width: 671px;
+  height: 120px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.bmi-calc-title {
+  font-size: 3rem;
+  font-weight: 900;
+  color: rgba(255, 255, 255, 1);
+}
+
+.bmi-calc-desciption {
+  font-size: 0.875rem;
+  font-weight: 300;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.bmi-chart-part {
+  font-size: 1.75rem;
+  font-weight: 900;
+  color: #FFFFFF;
+}
+
+table, tr, td {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-collapse: collapse;
+}
+
+.bmi-title {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #FFFFFF;
+}
+
+.bmi-details {
+  font-size: 0.875rem;
+  font-weight: 300;
+  color: rgba(255, 255, 255, 0.5);
 }
