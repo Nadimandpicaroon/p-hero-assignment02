@@ -678,8 +678,20 @@ footer {
     text-align: center;
   }
   .bmi-chart-calc {
+    width: 374px;
+    height: 775px;
+    grid-template-columns: repeat(1fr);
     flex-direction: column;
   }
   .bmi-chart-part {
     flex-direction: column;
   }
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+    line-height: 1;
+  }
+  .footer-right {
+    flex-direction: column;
+  }
+}
