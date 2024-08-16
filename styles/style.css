@@ -17,7 +17,6 @@
 }
 
   .header-bg{
-    /* background-image: linear-gradient(to bottom, #111111, #777777); */
     background-image: linear-gradient(#111111, #777777, #111111);
   }
 
@@ -42,7 +41,6 @@
   }
 
   .secondary-btn {
-    /* background-image: linear-gradient(to right,#111111, #777777); */
     background-color: black;
     color: white;
     padding: 16px 46.5px;
@@ -83,10 +81,15 @@
   
   /* navbar styles */
   .navbar {
+    display: flex;
     justify-content: space-between;
     align-items: center;
   }
   
+  .nav-links {
+    display: flex;
+  }
+
   .nav-link {
     text-decoration: none;
   }
@@ -102,6 +105,10 @@
   }
 
   /* banner styles */
+
+  .banner-sec{
+    display: flex;
+  }
 
   .banner-title {
     width: 520px;
@@ -605,3 +612,74 @@ footer {
 .footer-bottom p {
   margin: 0;
 }
+
+
+/* responsive part */
+@media screen and (max-width: 576px) {
+  .navbar {
+    flex-direction: column;
+  }
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+  }
+  .menu-toggle {
+    display: block;
+    font-size: 24px;
+    color: white;
+}
+  .banner-sec {
+    flex-direction: column;
+    text-align: center;
+  }
+  .banner, .test {
+    max-width: 100%;
+  }
+  .change-habit {
+    flex-direction: column;
+    text-align: center;
+    max-width: 100%;
+  }
+  .change-banner {
+    flex-direction: column;
+  }
+  .change-img-section {
+    flex-direction: column;
+    align-items: center;
+  }
+  .change-movement {
+    margin-bottom: 70px;
+  }
+  .run-extra-section {
+    flex-direction: column;
+  }
+  .promo-section {
+    flex-direction: column;
+    text-align: center;
+    max-width: 100%;
+    margin-bottom: 30px;
+  }
+  .text-content {
+    flex-direction: column;
+  }
+  .columns {
+    flex-direction: column;
+    max-width: 100%;
+  }
+  .column {
+    width: 80%;
+    height: auto;
+    padding: 10px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    align-items: center;
+    text-align: center;
+  }
+  .bmi-chart-calc {
+    flex-direction: column;
+  }
+  .bmi-chart-part {
+    flex-direction: column;
+  }
